@@ -55,5 +55,46 @@ int main()
 
     std::cout << "\nDone! This was for-loop!\n\n\n";
 
+    std::cout << "6. Make a program that writes 5 to 50 in steps of 5. Use..while." << '\n' << "TBA" << std::endl;
+
+    std::cout << "7. Make a program that ask user what grade they want in Programming 1. Use switch." << std::endl;
+    enum class Grade
+    {
+        A,
+        B,
+        C,
+        D,
+        E,
+        F
+    };
+    void printGrade(Grade grade) {
+
+    
+    switch (grade)
+    {
+    case Grade::A:
+        std::cout << "Outstanding";
+        break;
+    case Grade::B:
+        std::cout << "Very good";
+        break;
+    case Grade::C:
+        std::cout << "Good";
+        break;
+    case Grade::D:
+        std::cout << "Some flaws";
+        break;
+    case Grade::E:
+        std::cout << "Not very good...";
+        break;
+    case Grade::F:
+        std::cout << "Fail";
+        break;
+    default:
+        std::cout << "That is not a grade!";
+        break;
+         }
+    }
+
     return 0;
 }
